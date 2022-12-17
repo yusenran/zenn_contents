@@ -6,9 +6,20 @@ topics: [vscode, rust]
 published: true
 ---
 
+
 ## TL;DR
 
-`Rust Analyzer: Toggle inlay hints`にキーバインドを割り当てる
+~~`Rust Analyzer: Toggle inlay hints`にキーバインドを割り当てる~~
+VSCodeの`editor.inlayHints.enabled`を`onUnlessPressed`または`offUnlessPressed`に設定する
+
+Toggle inlay hintsはrust-analyzerから削除されました。 ([PR#13215](https://github.com/rust-lang/rust-analyzer/pull/13215))
+エディタが全般的にサポートするようになった今、言語ごとに特化した拡張機能でサポートするべきではないという思想らしいです。  
+ただし今でもちょいちょいなんで消したの？ってコメントがついているのでVSCodeが提供する機能との使い勝手の微妙な違いが受け入れられない人が一定数はいるみたいですね。
+
+:::message alert
+2022/12/18
+以降の内容は更新前のまま残しているので読む必要なし
+:::
 
 ## 背景
 
